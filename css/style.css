@@ -23,6 +23,7 @@ body {
     -webkit-font-smoothing: antialiased;
     place-content: center;
     min-height: 100vh;
+    background-color: hsl(0, 0%, 95%);
     
 }
 
@@ -108,50 +109,49 @@ a:hover, a:focus-visible{
 /* Bright orange: hsl(31, 77%, 52%)
 Dark cyan: hsl(184, 100%, 22%)
 Very dark cyan: hsl(179, 100%, 13%) */
-
-#cards {
+.cards {
     padding: 2.938rem;
     
 }
 
 
-.sedans {
+#sedans {
     background-color:  hsl(31, 77%, 52%);
     border-radius: 0.5rem 0.5rem 0 0;
     
 }
 
-.sedans a{
+#sedans a{
     color:#E28625;
 }
-.sedans a:hover, .sedans a:focus-visible{
+#sedans a:hover, #sedans a:focus-visible{
     color: white;
     background-color:  hsl(31, 77%, 52%);;
 }
 
-.suvs{
+#suvs{
     background-color: hsl(184, 100%, 22%);
 }
-.suvs a{
+#suvs a{
     color: #006971;
 }
 
-.suvs a:hover, .suvs a:focus-visible{
+#suvs a:hover, #suvs a:focus-visible{
     color: white;
     background-color:  hsl(184, 100%, 22%);
 }
 
 
-.luxury{
+#luxury{
    background-color:  hsl(179, 100%, 13%);
    border-radius: 0 0 0.5rem 0.5rem;
 }
 
-.luxury a {
+#luxury a {
     color: #004140;
 }
 
-.luxury a:hover, .luxury a:focus-visible{
+#luxury a:hover, #luxury a:focus-visible{
     color: white;
     background-color:  hsl(179, 100%, 13%);
 }
@@ -160,15 +160,16 @@ Very dark cyan: hsl(179, 100%, 13%) */
 
 @media (min-width: 1024px) {
     .card {
+        margin-top: 5.438rem;
         flex-direction: row;
         max-width: 57.5rem;
     }
 
-    .sedans {
+    #sedans {
         border-radius: 0.5rem 0  0 0.5rem;
     }
 
-    .luxury {
+    #luxury {
         border-radius: 0  0.5rem 0.5rem 0;
     }
 }
